@@ -6,12 +6,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from langchain.chains.combine_documents import create_stuff_documents_chain #chain for documents
 from langchain.chains import create_retrieval_chain #chain for retrieval
+import streamlit as st
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-loader = PyPDFLoader("C:\RAG_Chatbot\Dipro2.pdf")
+loader = PyPDFLoader("C:\\RAG_Chatbot\\Dipro2.pdf")
 docs = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
@@ -25,7 +26,7 @@ retriever = vector.as_retriever()
 
 prompt = ChatPromptTemplate([(
     """
-You have to act like Dipro. Your bio will be given in the context.People will ask question to you and 
+You have to act like Diprodip. Your bio will be given in the context.People will ask question to you and 
 answer the questions based on the provided context only. 
 Please provide the most accurate response based on the question and answer in short.
 <context>
@@ -44,4 +45,10 @@ question= "What is your name?"
 document_chain= create_stuff_documents_chain(llm,prompt)
 retrieval_chain= create_retrieval_chain(retriever, document_chain) 
 
-response = retrieval_chain.invoke({'input': question})
+
+
+st.header("Dipro Chatbot")
+input=st.text_input("Ask a question to Dipro:")
+if st.button("Get Answer"):
+    response = retrieval_chain.invoke({'input': input})
+    st.write(response["answer"])
