@@ -38,35 +38,44 @@ The project is implemented using the **LangChain** framework and features a user
 Click the **Fork** button at the top right of the GitHub repository page to create a copy in your account.
 
 ### 2. Clone the Repository
+```bash
 git clone https://github.com/DiprodipDas/Rag_Chatbot.git
+```
 
 ### 3. Create a Virtual Environment
-# python -m venv myenv  # For Windows/Linux/Mac
-# source myenv/bin/activate  # Mac/Linux
-# myenv\Scripts\activate  # Windows
-
+```bash
+ python -m venv myenv  # For Windows/Linux/Mac
+ source myenv/bin/activate  # Mac/Linux
+ myenv\Scripts\activate  # Windows
+```
 
 ### 4. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 5. Install and Set Up Ollama
-
+```bash
 ollama pull gemma:2b
+```
 
 ### 6. Set Up Environment Variables
-
+```bash
 GROQ_API_KEY=your_groq_api_key
+```
 
 ### 7. Add Your PDF Document
-
+```bash
 loader = PyPDFLoader(r"C:\your_path\document.pdf")
+```
 
 ### 8. Run the Chatbot
-
+```bash
 streamlit run chatbot.py
+```
 
 ### WorkFlow
-
+```bash
 ┌─────────────┐
 │   PDF Input │
 └──────┬──────┘
@@ -98,13 +107,13 @@ streamlit run chatbot.py
 ┌─────────────┐
 │   Answer    │ → Response to user
 └─────────────┘
-
+```
 
 
 ### 🤝 Contributors
-
+```bash
 Diprodip Das
-
+```
 
 
 
