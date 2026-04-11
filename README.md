@@ -110,10 +110,23 @@ streamlit run chatbot.py
 ```
 
 
+### Outcome_Screenshot
+
+<img width="1914" height="907" alt="image" src="https://github.com/user-attachments/assets/607e725c-f886-433d-bd92-454ee8a6a77a" />
+
+<img width="1919" height="902" alt="image" src="https://github.com/user-attachments/assets/ff9d0630-eb07-44d8-a57a-d25b2b04c6cb" />
+
+<img width="1919" height="975" alt="image" src="https://github.com/user-attachments/assets/554eff0e-ff74-4d29-86ed-9ecc843b12db" />
+
+
+
+
 ### 🤝 Contributors
 ```bash
 Diprodip Das
 ```
+
+###### Happy Coding 🐍 
 
 
 
