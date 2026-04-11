@@ -68,7 +68,7 @@ loader = PyPDFLoader(r"C:\your_path\document.pdf")
 
 streamlit run chatbot.py
 
-## WorkFlow
+### WorkFlow
 
 ┌─────────────┐
 │   PDF Input │
@@ -104,9 +104,11 @@ streamlit run chatbot.py
 
 
 
-## 🤝 Contributors
+### 🤝 Contributors
 
 Diprodip Das
+
+
 
 
  <img width="1914" height="905" alt="image" src="https://github.com/user-attachments/assets/a1f44192-5d9d-4e9c-a500-0a0f392ac9c7" />
