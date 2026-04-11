@@ -111,11 +111,6 @@ Diprodip Das
 
 
 
- <img width="1914" height="905" alt="image" src="https://github.com/user-attachments/assets/a1f44192-5d9d-4e9c-a500-0a0f392ac9c7" />
-
- <img width="1900" height="899" alt="image" src="https://github.com/user-attachments/assets/2d989a16-cca3-47d4-b300-648fe215f593" />
-
-<img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/777f9f30-ee65-4995-9406-cdf92063d0fd" />
 
 
 
