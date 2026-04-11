@@ -1,6 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
+from langchain_community.vectorstores import FAISS
 
 loader = PyPDFLoader("C:\RAG_Chatbot\Dipro2.pdf")
 docs = loader.load()
@@ -9,4 +10,6 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
 split_docs = text_splitter.split_documents(docs)
 
 embeddings= OllamaEmbeddings(model="gemma:2b")
+
+verctorstore = FAISS.from_documents(split_docs, embeddings)
 
