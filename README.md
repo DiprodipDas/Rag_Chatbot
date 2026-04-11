@@ -38,7 +38,6 @@ The project is implemented using the **LangChain** framework and features a user
 Click the **Fork** button at the top right of the GitHub repository page to create a copy in your account.
 
 ### 2. Clone the Repository
-```bash
 git clone https://github.com/DiprodipDas/Rag_Chatbot.git
 
 
