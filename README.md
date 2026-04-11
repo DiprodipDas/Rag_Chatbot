@@ -41,9 +41,9 @@ Click the **Fork** button at the top right of the GitHub repository page to crea
 git clone https://github.com/DiprodipDas/Rag_Chatbot.git
 
 ### 3. Create a Virtual Environment
-python -m venv myenv  # For Windows/Linux/Mac
-source myenv/bin/activate  # Mac/Linux
-myenv\Scripts\activate  # Windows
+**python -m venv myenv  # For Windows/Linux/Mac**
+**source myenv/bin/activate  # Mac/Linux**
+**myenv\Scripts\activate  # Windows**
 
 
 ### 4. Install Dependencies
