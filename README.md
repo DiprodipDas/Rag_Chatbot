@@ -41,70 +41,7 @@ Click the **Fork** button at the top right of the GitHub repository page to crea
 ```bash
 git clone https://github.com/DiprodipDas/Rag_Chatbot.git
 
-### 3. Create a Virtual Environment
-python -m venv myenv  # For Windows/Linux/Mac
-source myenv/bin/activate  # Mac/Linux
-myenv\Scripts\activate  # Windows
 
-
-### 4. Install Dependencies
-pip install -r requirements.txt
-
-### 5. Install and Set Up Ollama
-
-ollama pull gemma:2b
-
-### 6. Set Up Environment Variables
-
-GROQ_API_KEY=your_groq_api_key
-
-### 7. Add Your PDF Document
-
-loader = PyPDFLoader(r"C:\your_path\document.pdf")
-
-### 8. Run the Chatbot
-
-streamlit run chatbot.py
-
-### WorkFlow
-
-┌─────────────┐
-│   PDF Input │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│ Text Split  │ → Chunking into smaller pieces
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│  Embeddings │ → Ollama (gemma:2b)
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│ FAISS Store │ → Vector database
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│   Query     │ → User question
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│  Retrieval  │ → Similarity search
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│  Generation │ → Groq (Llama 3.1 8B Instant)
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│   Answer    │ → Response to user
-└─────────────┘
-
-
-
-### 🤝 Contributors
-
-Diprodip Das
 
 
 
