@@ -19,9 +19,9 @@ split_docs = text_splitter.split_documents(docs)
 
 embeddings= OllamaEmbeddings(model="gemma:2b")
 
-verctor = FAISS.from_documents(split_docs, embeddings)
+vector = FAISS.from_documents(split_docs, embeddings)
 
-retriever = verctor.as_retriever()
+retriever = vector.as_retriever()
 
 prompt = ChatPromptTemplate([(
     """
