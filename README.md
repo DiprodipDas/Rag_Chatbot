@@ -42,14 +42,12 @@ Click the **Fork** button at the top right of the GitHub repository page to crea
 git clone https://github.com/DiprodipDas/Rag_Chatbot.git
 
 ### 3. Create a Virtual Environment
-```bash
 python -m venv myenv  # For Windows/Linux/Mac
 source myenv/bin/activate  # Mac/Linux
 myenv\Scripts\activate  # Windows
 
 
 ### 4. Install Dependencies
-```bash
 pip install -r requirements.txt
 
 ### 5. Install and Set Up Ollama
