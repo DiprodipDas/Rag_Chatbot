@@ -12,10 +12,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-loader = PyPDFLoader("C:\\RAG_Chatbot\\Dipro2.pdf")
+loader = PyPDFLoader("C:\\RAG_Chatbot\\Dipro1.pdf")
 docs = loader.load()
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=20)
 split_docs = text_splitter.split_documents(docs)
 
 embeddings= OllamaEmbeddings(model="gemma:2b")
@@ -31,8 +31,8 @@ answer the questions based on the provided context only.
 Please provide the most accurate response based on the question and answer in short.
 <context>
 {context}
-<context>
-Ouestion: {input}
+</context>
+Question: {input}
 Answer:
 """)
 
